@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AcheMemédio</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1>AcheMemédio</h1>
+  <div class="search-box">
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    <input type="text"  placeholder="Digite o nome do medicamento"/>
+    <button><i class="fa-solid fa-circle-xmark"></i></button>
+  </div>
+</header>
+
+<div class="container layout">
+  
+    <div class="perfil">
+        <h2>Guilherme Francisco Herrera</h2>
+        <b>+55 (14) 98822-4789</b>
+
+        <div class="btn-area">
+            <a href="editar-perfil.html" class="btn">EDITAR PERFIL</a>
+            <a href="editar-endereco.html" class="btn">EDITAR ENDEREÇO</a>
+        </div>
+
+        <hr>
+
+        <p class="titulo-pequeno"><i class="fa-solid fa-magnifying-glass"></i> Histórico de busca</p>
+        <div class="box-item">Rivotril</div>
+        <div class="box-item">Paracetamol </div>
+
+        <p class="titulo-pequeno"><i class="fa-solid fa-list"></i> Mais populares</p>
+        <div class="box-item">
+            <input type="checkbox" id="toggle-list" />
+            <label for="toggle-list">Ver lista</label>
+            <ul class="lista">
+                <li>Clonazepam</li>
+                <li>Paracetamol</li>
+                <li>Dorflex</li>
+                <li>Loratadina</li>
+                <li>Predinisona</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <p class="titulo-pequeno"><i class="fa-solid fa-location-dot"></i> Localização</p>
+        <div class="box-item">Pederneiras-SP</div>
+
+        <p class="titulo-pequeno"><i class="fa-solid fa-pills"></i></i> Farmácias disponíveis</p>
+        <div class="box-item">
+            <input type="checkbox" id="toggle-lista" />
+            <label for="toggle-lista">Ver mais</label>
+            <ul class="lista" id="lista-farmacias">
+                <li><button class="farmacia-btn" data-id="1">Farmácia do Cachucho</button></li>
+                <li><button class="farmacia-btn" data-id="2">DROGASIL</button></li>
+                <li><button class="farmacia-btn" data-id="3">Farmácia Multidrogas</button></li>
+                <li><button class="farmacia-btn" data-id="4">Cidade Nova Farma</button></li>
+                <li><button class="farmacia-btn" data-id="5">Farmácia Pia Mater</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+  
+
+</div>
+</body>
+</html>
